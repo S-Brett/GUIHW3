@@ -1,4 +1,9 @@
 
+ 
+// Brett Svendsen, UMass Lowell Computer Science
+// brett_svendsen@student.uml.edu
+
+
 "use strict";
 
 function isNum(_string){ return /^-?\d+$/.test(_string); }
