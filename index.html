@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>THE TABLE-ING</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+</head>
+<body>
+
+	<h1>Brett's Fantastical Table<br />of<br />Number Generating Multiplication</h1>
+
+	<form id="table-creation-form" onsubmit="return false;" >
+		<span> 
+			Keep the range for any dimension between 250 numbers. <br />
+			There is no guarentee it will work with larger ranges. <br />
+			(MAX RANGE 500) <br />
+			(MAX NUMBER +/- 1000,000,000,000) <br />
+			<br />
+		</span>
+
+		<div id="tableStartXInput">
+			<label for="tableStartX">Table Start X:</label>
+			<input type="text" id="tableStartX" name="tableStartX" value="1">
+		</div>
+
+
+		<div id="tableEndXInput">
+			<label for="tableEndX">Table End X:</label>
+			<input type="text" id="tableEndX" name="tableEndX" value="5">
+		</div>
+
+		<br />
+
+		<div id="tableStartYInput">
+			<label for="tableStartY">Table Start Y:</label>
+			<input type="text" id="tableStartY" name="tableStartY" value="1">
+		</div>
+
+		<div id="tableEndYInput">
+			<label for="tableEndY">Table End Y:</label>
+			<input type="text" id="tableEndY" name="tableEndY" value="5">
+		</div>
+
+		<br />
+		<input type="submit" name="submit" onclick="genTable()">
+	</form>
+
+	<div id="table-div"></div>
+
+</body>
+<script type="text/javascript" src="scripts/script.js"></script>
+</html>
